@@ -18,7 +18,7 @@ class SportComponents {
   static const Color backgroundWhite = Color(0xFFFFFFFF);
 
   /// Button Components
-  static class Buttons {
+  abstract class Buttons {
     // Primary Button
     static Widget primaryButton({
       required String text,
