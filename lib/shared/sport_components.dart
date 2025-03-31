@@ -94,7 +94,7 @@ class SportComponents {
   }
 
   /// Card Components
-  static class Cards {
+  abstract class Cards {
     // Score Card
     static Widget scoreCard({required Widget child}) {
       return Container(
@@ -191,7 +191,7 @@ class SportComponents {
   }
 
   /// Typography Components
-  static class Typography {
+  abstract class Typography {
     // Heading
     static Widget heading(String text) {
       return Padding(
@@ -258,7 +258,7 @@ class SportComponents {
   }
 
   /// Input Components
-  static class Inputs {
+  abstract class Inputs {
     // Text Field
     static Widget textField({
       required TextEditingController controller,
@@ -339,7 +339,7 @@ class SportComponents {
   }
 
   /// List Components
-  static class Lists {
+  abstract class Lists {
     // List Item
     static Widget listItem({
       required String title,
@@ -463,7 +463,7 @@ class SportComponents {
   }
 
   /// Navigation Components
-  static class Navigation {
+  abstract class Navigation {
     // Tab Bar
     static Widget tabBar({
       required List<TabItem> items,
@@ -516,7 +516,7 @@ class SportComponents {
   }
 
   /// Progress Indicators
-  static class Progress {
+  abstract class Progress {
     // Progress Bar
     static Widget progressBar({
       required double value, // 0.0 to 1.0
@@ -552,7 +552,7 @@ class SportComponents {
   }
 
   /// Image Components
-  static class Images {
+  abstract class Images {
     // Avatar
     static Widget avatar({
       required String imageUrl,
@@ -636,7 +636,7 @@ class SportComponents {
   }
 
   /// Badge Components
-  static class Badges {
+  abstract class Badges {
     // Notification Badge
     static Widget notificationBadge({
       required Widget child,
@@ -717,7 +717,7 @@ class SportComponents {
   }
 
   /// Layout Components
-  static class Layout {
+  abstract class Layout {
     // Divider
     static Widget divider() {
       return Container(
@@ -734,7 +734,7 @@ class SportComponents {
   }
 
   /// Sport-Specific Components
-  static class SportSpecific {
+  abstract class SportSpecific {
     // Match Timer
     static Widget matchTimer({
       required String time,
@@ -922,7 +922,7 @@ class SportComponents {
                   decoration: BoxDecoration(
                     color: backgroundLight,
                     borderRadius: BorderRadius.circular(6),
-                    overflow: Overflow.hidden,
+                    overflow: Clip.hardEdge,
                   ),
                   child: Row(
                     children: [
