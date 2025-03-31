@@ -1,0 +1,279 @@
+# Sports-themed shared UI components for mobile application
+components:
+  # Button components
+  buttons:
+    primaryButton:
+      type: button
+      style:
+        backgroundColor: "#1E88E5"  # Sports blue
+        borderRadius: 8
+        padding: 12
+        elevation: 3
+      variants:
+        success:
+          backgroundColor: "#43A047"  # Team green
+        danger:
+          backgroundColor: "#E53935"  # Referee red
+        warning:
+          backgroundColor: "#FFB300"  # Caution yellow
+      states:
+        disabled:
+          opacity: 0.6
+        pressed:
+          opacity: 0.8
+          
+    iconButton:
+      type: button
+      style:
+        borderRadius: 24
+        padding: 10
+        backgroundColor: "transparent"
+      
+    floatingActionButton:
+      type: button
+      style:
+        borderRadius: 28
+        backgroundColor: "#FF6D00"  # Energy orange
+        elevation: 6
+        position: "absolute"
+        bottom: 16
+        right: 16
+        width: 56
+        height: 56
+        
+  # Card components
+  cards:
+    scoreCard:
+      type: view
+      style:
+        backgroundColor: "#FFFFFF"
+        borderRadius: 12
+        padding: 16
+        margin: 8
+        elevation: 2
+        
+    playerCard:
+      type: view
+      style:
+        backgroundColor: "#FFFFFF"
+        borderRadius: 8
+        padding: 12
+        margin: 6
+        elevation: 1
+        flexDirection: "row"
+        alignItems: "center"
+        
+    statsCard:
+      type: view
+      style:
+        backgroundColor: "#F5F5F5"
+        borderRadius: 10
+        padding: 14
+        margin: 8
+        
+  # Text components
+  typography:
+    heading:
+      type: text
+      style:
+        fontSize: 24
+        fontWeight: "bold"
+        color: "#212121"
+        marginBottom: 8
+        
+    subheading:
+      type: text
+      style:
+        fontSize: 18
+        fontWeight: "600"
+        color: "#424242"
+        marginBottom: 6
+        
+    body:
+      type: text
+      style:
+        fontSize: 16
+        color: "#616161"
+        
+    caption:
+      type: text
+      style:
+        fontSize: 14
+        color: "#757575"
+        
+    scoreText:
+      type: text
+      style:
+        fontSize: 32
+        fontWeight: "bold"
+        color: "#212121"
+        
+  # Input components
+  inputs:
+    textField:
+      type: textInput
+      style:
+        borderWidth: 1
+        borderColor: "#BDBDBD"
+        borderRadius: 6
+        padding: 12
+        fontSize: 16
+        backgroundColor: "#FFFFFF"
+      states:
+        focused:
+          borderColor: "#1E88E5"
+          borderWidth: 2
+        error:
+          borderColor: "#E53935"
+          
+    searchBar:
+      type: textInput
+      style:
+        borderRadius: 20
+        padding: 10
+        paddingLeft: 40
+        backgroundColor: "#F5F5F5"
+        fontSize: 16
+        
+  # List components
+  lists:
+    listItem:
+      type: view
+      style:
+        flexDirection: "row"
+        alignItems: "center"
+        padding: 12
+        borderBottomWidth: 1
+        borderBottomColor: "#EEEEEE"
+        
+    leaderboardItem:
+      type: view
+      style:
+        flexDirection: "row"
+        alignItems: "center"
+        justifyContent: "space-between"
+        padding: 14
+        borderBottomWidth: 1
+        borderBottomColor: "#EEEEEE"
+        
+  # Navigation components
+  navigation:
+    tabBar:
+      type: view
+      style:
+        flexDirection: "row"
+        backgroundColor: "#FFFFFF"
+        height: 56
+        elevation: 8
+        justifyContent: "space-around"
+        alignItems: "center"
+        
+    tabItem:
+      type: view
+      style:
+        alignItems: "center"
+        justifyContent: "center"
+        padding: 8
+        
+  # Progress indicators
+  progress:
+    progressBar:
+      type: view
+      style:
+        height: 8
+        backgroundColor: "#E0E0E0"
+        borderRadius: 4
+        overflow: "hidden"
+        
+    activityIndicator:
+      type: activityIndicator
+      style:
+        color: "#1E88E5"
+        size: "large"
+        
+  # Image components
+  images:
+    avatar:
+      type: image
+      style:
+        width: 48
+        height: 48
+        borderRadius: 24
+        
+    teamLogo:
+      type: image
+      style:
+        width: 64
+        height: 64
+        
+    banner:
+      type: image
+      style:
+        width: "100%"
+        height: 180
+        borderRadius: 8
+        
+  # Badge components
+  badges:
+    notificationBadge:
+      type: view
+      style:
+        backgroundColor: "#E53935"
+        borderRadius: 12
+        minWidth: 24
+        height: 24
+        justifyContent: "center"
+        alignItems: "center"
+        position: "absolute"
+        top: -8
+        right: -8
+        
+    statusBadge:
+      type: view
+      style:
+        paddingHorizontal: 8
+        paddingVertical: 4
+        borderRadius: 12
+        backgroundColor: "#43A047"
+        
+  # Dividers and spacers
+  layout:
+    divider:
+      type: view
+      style:
+        height: 1
+        backgroundColor: "#EEEEEE"
+        marginVertical: 8
+        
+    spacer:
+      type: view
+      style:
+        height: 16
+        
+  # Sport-specific components
+  sportSpecific:
+    matchTimer:
+      type: view
+      style:
+        backgroundColor: "#212121"
+        padding: 8
+        borderRadius: 6
+        
+    scoreBoard:
+      type: view
+      style:
+        flexDirection: "row"
+        justifyContent: "space-between"
+        alignItems: "center"
+        backgroundColor: "#F5F5F5"
+        padding: 16
+        borderRadius: 8
+        
+    statBar:
+      type: view
+      style:
+        height: 12
+        backgroundColor: "#E0E0E0"
+        borderRadius: 6
+        overflow: "hidden"
+        marginVertical: 4
