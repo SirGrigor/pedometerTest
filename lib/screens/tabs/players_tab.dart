@@ -64,24 +64,24 @@ class _PlayersTabState extends State<PlayersTab> {
                       onTap: () {
                         // Navigate to player details
                       },
-                      child: SportCards.playerCard(
-                        name: player.name,
-                        position: player.position,
-                        imageUrl: player.imageUrl,
-                        child: Column(
-                          children: [
-                            SportLayout.spacer(height: 8),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                _buildStatItem('Goals', player.goals.toString()),
-                                _buildStatItem('Assists', player.assists.toString()),
-                              ],
-                            ),
-                            SportLayout.spacer(height: 8),
-                            SportTypography.caption('Team: ${player.team}'),
-                          ],
-                        ),
+                      child: Column(
+                        children: [
+                          SportCards.playerCard(
+                            name: player.name,
+                            position: player.position,
+                            imageUrl: player.imageUrl,
+                          ),
+                          SportLayout.spacer(height: 8),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              _buildStatItem('Goals', player.goals.toString()),
+                              _buildStatItem('Assists', player.assists.toString()),
+                            ],
+                          ),
+                          SportLayout.spacer(height: 4),
+                          SportTypography.caption('Team: ${player.team}'),
+                        ],
                       ),
                     );
                   },

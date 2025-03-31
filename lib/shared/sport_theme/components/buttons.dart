@@ -36,7 +36,6 @@ class SportButtons {
           borderRadius: BorderRadius.circular(8),
         ),
         padding: const EdgeInsets.all(12),
-        disabledOpacity: 0.6,
       ),
       child: Text(text),
     );

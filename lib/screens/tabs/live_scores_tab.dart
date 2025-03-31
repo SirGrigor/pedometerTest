@@ -5,6 +5,7 @@ import '../../shared/sport_theme/components/sport_specific.dart';
 import '../../shared/sport_theme/components/layout.dart';
 import '../../shared/sport_theme/components/badges.dart';
 import '../../shared/sport_theme/colors.dart';
+import '../../shared/sport_theme/enums.dart';
 import '../../models/match.dart';
 import '../../services/match_service.dart';
 
