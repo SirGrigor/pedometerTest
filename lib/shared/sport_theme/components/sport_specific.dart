@@ -191,8 +191,8 @@ class SportSpecific {
                 decoration: BoxDecoration(
                   color: SportColors.backgroundLight,
                   borderRadius: BorderRadius.circular(6),
-                  overflow: Clip.hardEdge,
                 ),
+                clipBehavior: Clip.hardEdge,
                 child: Row(
                   children: [
                     FractionallySizedBox(
